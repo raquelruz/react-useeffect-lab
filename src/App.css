@@ -1,6 +1,8 @@
 .app-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	gap: 2rem;
 	align-items: center;
 	font-family: "Segoe UI", sans-serif;
     padding: 20px;

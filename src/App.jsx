@@ -1,4 +1,5 @@
 import "./App.css";
+import { CounterPreview } from "./components/CounterPreview/CounterPreview";
 import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
 
 export const App = () => {
@@ -7,7 +8,9 @@ export const App = () => {
 			<div className="app-container">
 
 				<WelcomeMessage />
-        
+
+        <CounterPreview />
+
 			</div>
 		</>
 	);
