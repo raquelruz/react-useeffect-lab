@@ -15,8 +15,11 @@ export const ProductsOnMount = () => {
 				setProducts(data);
 			})
 			.catch((error) => {
-				console.log(error);
-			});
+				setError(error.message);
+			})
+            .finally(() => {
+                setLoading(false);
+            });
 	}, []);
 
     if (loading) {

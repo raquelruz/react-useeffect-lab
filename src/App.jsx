@@ -5,10 +5,12 @@ import { CounterPreview } from "./components/CounterPreview/CounterPreview";
 import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
 import { ResponsiveLabel } from "./components/ResponsiveLabel/ResponsiveLabel";
 import { ProductsOnMount } from "./components/ProductsOnMount/ProductsOnMount";
+import { LocalProductSearch } from "./components/LocalProductsSearch/LocalProductSearch";
 
 export const App = () => {
 	const [showClock, setShowClock] = useState(true);
 	const [showProducts, setShowProducts] = useState(false);
+	const [showLocalProducts, setShowLocalProducts] = useState(false);
 
 	return (
 		<>
@@ -30,6 +32,13 @@ export const App = () => {
 					{showProducts && <ProductsOnMount />}
 					<button onClick={() => setShowProducts((prev) => !prev)}>
 						{showProducts ? "Ocultar" : "Mostrar"} Productos
+					</button>
+				</div>
+
+				<div className="producst-container">
+					{showLocalProducts && <LocalProductSearch />}
+					<button onClick={() => setShowLocalProducts((prev) => !prev)}>
+						{showLocalProducts ? "Ocultar" : "Mostrar"} Productos
 					</button>
 				</div>
 			</div>
