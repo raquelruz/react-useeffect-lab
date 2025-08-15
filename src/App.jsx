@@ -4,9 +4,11 @@ import { AutoRefreshingClock } from "./components/AutoRefreshingClock/AutoRefres
 import { CounterPreview } from "./components/CounterPreview/CounterPreview";
 import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
 import { ResponsiveLabel } from "./components/ResponsiveLabel/ResponsiveLabel";
+import { ProductsOnMount } from "./components/ProductsOnMount/ProductsOnMount";
 
 export const App = () => {
 	const [showClock, setShowClock] = useState(true);
+	const [showProducts, setShowProducts] = useState(false);
 
 	return (
 		<>
@@ -22,8 +24,14 @@ export const App = () => {
 					</button>
 				</div>
 
-        <ResponsiveLabel />
+				<ResponsiveLabel />
 
+				<div className="producst-container">
+					{showProducts && <ProductsOnMount />}
+					<button onClick={() => setShowProducts((prev) => !prev)}>
+						{showProducts ? "Ocultar" : "Mostrar"} Productos
+					</button>
+				</div>
 			</div>
 		</>
 	);
