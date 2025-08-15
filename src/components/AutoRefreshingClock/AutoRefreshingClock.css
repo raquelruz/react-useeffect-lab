@@ -1,0 +1,9 @@
+.clock-container h2 {
+	font-size: 1.2rem;
+}
+
+.clock-container p {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+}
