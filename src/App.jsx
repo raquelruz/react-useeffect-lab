@@ -7,6 +7,7 @@ import { ResponsiveLabel } from "./components/ResponsiveLabel/ResponsiveLabel";
 import { ProductsOnMount } from "./components/ProductsOnMount/ProductsOnMount";
 import { LocalProductSearch } from "./components/LocalProductsSearch/LocalProductSearch";
 import { CartSummary } from "./components/CartSummary/CartSummary";
+import { WindowFocusStatus } from "./components/WindowFocusStatus/WindowFocusStatus";
 
 export const App = () => {
 	const [showClock, setShowClock] = useState(true);
@@ -47,7 +48,9 @@ export const App = () => {
 					<CartSummary />
 				</div>
 
-				
+				<div className="window-container">
+					<WindowFocusStatus />
+				</div>
 			</div>
 		</>
 	);

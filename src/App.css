@@ -10,7 +10,8 @@
 
 .clock-container,
 .products-container,
-.cart-container {
+.cart-container,
+.window-container {
 	text-align: center;
 	padding: 2rem 3rem;
 	border-radius: 12px;

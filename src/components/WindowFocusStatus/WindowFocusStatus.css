@@ -1,0 +1,12 @@
+.status-box.active {
+	color: #059669;
+}
+
+.status-box.inactive {
+	color: #dc2626;
+}
+
+.status-text {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
