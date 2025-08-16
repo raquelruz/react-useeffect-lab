@@ -31,7 +31,7 @@ export const ProductsOnMount = () => {
 	}
 
 	return (
-		<div className="products-container">
+		<div>
 			<h2>Productos</h2>
 			<div>
 				{products.map((product) => (

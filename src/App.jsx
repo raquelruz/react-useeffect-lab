@@ -6,6 +6,7 @@ import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
 import { ResponsiveLabel } from "./components/ResponsiveLabel/ResponsiveLabel";
 import { ProductsOnMount } from "./components/ProductsOnMount/ProductsOnMount";
 import { LocalProductSearch } from "./components/LocalProductsSearch/LocalProductSearch";
+import { CartSummary } from "./components/CartSummary/CartSummary";
 
 export const App = () => {
 	const [showClock, setShowClock] = useState(true);
@@ -28,19 +29,25 @@ export const App = () => {
 
 				<ResponsiveLabel />
 
-				<div className="producst-container">
+				<div className="products-container">
 					{showProducts && <ProductsOnMount />}
 					<button onClick={() => setShowProducts((prev) => !prev)}>
 						{showProducts ? "Ocultar" : "Mostrar"} Productos
 					</button>
 				</div>
 
-				<div className="producst-container">
+				<div className="products-container">
 					{showLocalProducts && <LocalProductSearch />}
 					<button onClick={() => setShowLocalProducts((prev) => !prev)}>
 						{showLocalProducts ? "Ocultar" : "Mostrar"} Productos
 					</button>
 				</div>
+
+				<div className="cart-container">
+					<CartSummary />
+				</div>
+
+				
 			</div>
 		</>
 	);

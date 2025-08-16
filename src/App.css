@@ -9,7 +9,8 @@
 }
 
 .clock-container,
-.producst-container {
+.products-container,
+.cart-container {
 	text-align: center;
 	padding: 2rem 3rem;
 	border-radius: 12px;
@@ -22,7 +23,7 @@
 
 
 .clock-container button,
-.producst-container button {
+.products-container button {
 	background-color: rgb(94, 118, 226);
 	color: white;
 	border: none;
@@ -33,6 +34,6 @@
 }
 
 .clock-container button:hover,
-.producst-container button:hover {
+.products-container button:hover {
 	background-color: rgb(74, 98, 206);
 }

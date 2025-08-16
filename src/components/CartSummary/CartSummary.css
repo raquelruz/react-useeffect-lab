@@ -1,0 +1,13 @@
+.cart-container p {
+    padding: 0 8px;
+    font-weight: 600;
+}
+
+.cart-container span {
+    padding: 0 8px;
+}
+
+.cart-container input {
+    width: 10%;
+    padding: 3px;
+}
