@@ -1,0 +1,36 @@
+.scrolltop-btn {
+	position: fixed;
+	right: 1.25rem;
+	bottom: 1.25rem;
+	padding: 0.6rem 0.9rem;
+	border: none;
+	border-radius: 999px;
+	background: #111827;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+	transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+	z-index: 9999;
+}
+
+.scrolltop-btn:hover {
+	box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+	transform: translateY(-2px);
+}
+
+.scrolltop-btn:focus {
+	outline: 2px solid #60a5fa;
+	outline-offset: 2px;
+}
+
+.scrolltop-btn.hide {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(8px);
+}
+
+.scrolltop-btn.show {
+	opacity: 1;
+	transform: translateY(0);
+}

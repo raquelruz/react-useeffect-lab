@@ -8,6 +8,7 @@ import { ProductsOnMount } from "./components/ProductsOnMount/ProductsOnMount";
 import { LocalProductSearch } from "./components/LocalProductsSearch/LocalProductSearch";
 import { CartSummary } from "./components/CartSummary/CartSummary";
 import { WindowFocusStatus } from "./components/WindowFocusStatus/WindowFocusStatus";
+import { ScrollToTopButton } from "./components/ScrollToTopButton/ScrollToTopButton";
 
 export const App = () => {
 	const [showClock, setShowClock] = useState(true);
@@ -51,6 +52,8 @@ export const App = () => {
 				<div className="window-container">
 					<WindowFocusStatus />
 				</div>
+
+				<ScrollToTopButton />
 			</div>
 		</>
 	);
