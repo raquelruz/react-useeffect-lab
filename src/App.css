@@ -11,7 +11,8 @@
 .clock-container,
 .products-container,
 .cart-container,
-.window-container {
+.window-container,
+.mouseposition-container {
 	text-align: center;
 	padding: 2rem 3rem;
 	border-radius: 12px;

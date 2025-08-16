@@ -9,6 +9,7 @@ import { LocalProductSearch } from "./components/LocalProductsSearch/LocalProduc
 import { CartSummary } from "./components/CartSummary/CartSummary";
 import { WindowFocusStatus } from "./components/WindowFocusStatus/WindowFocusStatus";
 import { ScrollToTopButton } from "./components/ScrollToTopButton/ScrollToTopButton";
+import MousePositionTracker from "./components/MousePositionTracker/MousePositionTracker";
 
 export const App = () => {
 	const [showClock, setShowClock] = useState(true);
@@ -53,7 +54,13 @@ export const App = () => {
 					<WindowFocusStatus />
 				</div>
 
-				<ScrollToTopButton />
+				<div>
+					<ScrollToTopButton />
+				</div>
+
+				<div className="mouseposition-container">
+					<MousePositionTracker />
+				</div>
 			</div>
 		</>
 	);
